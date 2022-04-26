@@ -26,8 +26,12 @@ public class Nematode : MonoBehaviour
             if (i == 0)
             {
                 sphere.AddComponent(typeof(NoiseWander));
+                sphere.AddComponent(typeof(Constrain));
+                sphere.AddComponent(typeof(ObstacleAvoidance));
             }
         }
+
+        
     }
 
 

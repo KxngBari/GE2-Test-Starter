@@ -212,7 +212,6 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -298,7 +297,6 @@ Transform:
   m_LocalRotation: {x: 0.41391978, y: -0.055551864, z: 0.025316443, w: 0.908264}
   m_LocalPosition: {x: 0, y: 30, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -440,7 +438,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -455,7 +452,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -473,6 +469,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   length: 20
+  gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 0, b: 0.053391933, a: 1}
+    key1: {r: 0.8773585, g: 0.47665253, b: 0.15450332, a: 1}
+    key2: {r: 0.8630388, g: 0.8962264, b: 0.17473589, a: 0}
+    key3: {r: 0.19568971, g: 0.8980392, b: 0.1764706, a: 0}
+    key4: {r: 0.1764706, g: 0.5089587, b: 0.8980392, a: 0}
+    key5: {r: 0.5780408, g: 0.13050307, b: 0.7830189, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 193
+    ctime1: 13300
+    ctime2: 25636
+    ctime3: 35466
+    ctime4: 46067
+    ctime5: 55512
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 6
+    m_NumAlphaKeys: 2
   material: {fileID: 2100000, guid: 6e4fc4decf74e1c45909682693921aee, type: 2}
 --- !u!114 &5372656057005222719
 MonoBehaviour:
@@ -500,6 +525,7 @@ GameObject:
   - component: {fileID: 5372656057005222716}
   - component: {fileID: 5372656057005222717}
   - component: {fileID: 5372656057005222719}
+  - component: {fileID: 5372656057005222852}
   m_Layer: 7
   m_Name: nematode
   m_TagString: Untagged
@@ -507,3 +533,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5372656057005222852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372656057005222850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57597fd040851b2499f7b6c87af86a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: {x: 0, y: 0, z: 0}
+  acceleration: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0, z: 0}
+  mass: 1
+  damping: 0.01
+  banking: 0.1
+  maxSpeed: 5
+  maxForce: 10
